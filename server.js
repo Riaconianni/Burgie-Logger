@@ -14,7 +14,7 @@ const routes = require('./routes');
 
 // set up middleware
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(expressurlencoded({ extended: true }));
 app.use(express.static('public'));
 
 app.engine('handlebars', expressHandlebars({ defaultLayout: 'main' }));
