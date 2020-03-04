@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
   // get all cat data
   getBurgers()
     .then(burgerdata => {
-      res.render('index', { cats: burgerdata });
+      res.render('index', { burgers: burgerdata });
     })
     .catch(err => {
       res.status(500).end();
